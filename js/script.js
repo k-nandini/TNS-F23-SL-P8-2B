@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('start-quiz').addEventListener('click', function() {
-        fetch('https://color-picker-26p7.onrender.com/movies')
+        fetch('https://color-picker-26p7.onrender.com/movies') 
             .then(response => response.json())
             .then(data => {
                 document.getElementById('quiz-container').style.display = 'block';
