@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('start-quiz').addEventListener('click', function() {
-        fetch('https://color-picker-26p7.onrender.com/movies')
+        fetch('AMANDA URL') // Pending API URL from Amanda
             .then(response => response.json())
             .then(data => {
                 document.getElementById('quiz-container').style.display = 'block';
@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => console.error('Error:', error));
     });
 });
+
+// Logic for quiz will update after API is received
 
 let score = 0;
 let totalQuestions = 0;
